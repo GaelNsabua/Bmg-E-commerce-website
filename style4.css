@@ -1,0 +1,432 @@
+/*Page d'accueil*/
+body
+{
+    width:100%;
+}
+
+#header
+{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding :20px 30px;
+    background-image: linear-gradient(to right,#060621, #840026cd ) ;
+    width :100%;
+    z-index:999;
+    position :sticky;
+    top:0;
+    left:0;
+}
+
+#menu
+{
+    display :flex;
+    align-items:center;
+    justify-content: center;
+}
+
+#menu li
+{
+    list-style:none;
+    padding :0px 10px;
+}
+
+#menu li a
+{
+   color:#37ddc2c6;
+   text-decoration:none;
+   font-size:16px;
+   font-weight:600;
+   transition :0.3s ease;
+}
+
+#menu li a:hover,
+#menu li a.active
+{
+    color:#9aff40;
+}
+
+#head
+{
+    background-image:url("Image/Img11.jpg");
+    height :90vh;
+    width :100%;
+    background-size:cover;
+    background-position:top 25%;
+    padding:0 80px;
+    display :flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content: center;
+}
+
+#head h1
+{
+    color:#ff40bd;
+    font-size:8em;
+    font-weight:bold;
+    text-decoration:underline;
+    text-shadow:5px 5px 10px black;
+}
+
+#head h3
+{
+    color:#6af5ff;
+    font-size:5em;
+    font-weight:bold;
+    margin:10px;
+    text-shadow:5px 5px 10px black;
+}
+
+#head h2
+{
+    color:#ff1f00;
+    font-size:3em;
+    font-weight:bold;
+    text-shadow:5px 5px 10px black;
+}
+
+#head button
+{
+    border:2px white inset; 
+    border-radius:20px;
+    box-shadow:5px 5px 10px black;   
+    font-weight:bold;                 
+    cursor:pointer;
+    font-size:3em;
+    color:white;
+    background:red ;
+}
+
+.sect1
+{
+    padding:10px;
+    margin:10px 5px;
+    width:100%;
+}
+
+#produit1
+{
+    text-align: center ;
+}
+
+#produit1 h2
+{
+    font-size:2em; 
+    font-weight:bold;
+    background:url("Image/Img2.jpg");
+    color:#55ffff;
+    width:100%;
+}
+
+#produit1 .prod-conteneur
+{
+    display :flex;
+    justify-content:space-between;
+    padding-top:20px;
+    flex-wrap:wrap;
+    margin:auto;
+}
+
+#produit1 .produit
+{
+    width:23%;
+    min-width: 250px;
+    padding:10px 12px;
+    border:2px white inset; 
+    border-radius:20px;
+    box-shadow:5px 5px 10px black; 
+    cursor :pointer;
+    margin:15px 0;
+    position : relative;
+}
+
+#produit1 .produit:hover
+{
+    box-shadow:5px 5px 10px green;
+}
+
+#produit1 .produit img
+{
+    width :100%;
+    border-radius:20px;
+}
+
+#produit1 .produit .description
+{
+    text-align:start;
+    padding :5px 5px;
+    background-color:#f4ffd5 ;
+}
+
+#produit1 .produit .description span
+{
+    color:#bfbfff;
+    font-size:12px;
+}
+
+#produit1 .produit .description h5
+{
+    padding-top:5px;
+    color:black;
+    font-size:14px;
+    text-shadow:5px 5px 10px black;
+}
+
+#produit1 .produit .description h4
+{
+    color:#0042ff;
+    font-weight:bold;
+    text-shadow:5px 5px 10px black;
+}
+
+#produit1 .produit .description .panier
+{
+    width:50px; 
+    height:50px; 
+    border:2px orange inset; 
+    border-radius:30px;
+    box-shadow:5px 5px 10px black;
+    line-height:10px;
+    position : absolute;
+    bottom :20px;
+    right :10px;
+}
+
+#commentaires
+{
+    display :flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    align-items: center;
+    background:url("Image/Img49.jpg");
+    background-position:100%;
+    
+}
+
+#commentaires h4
+{
+    font-weight:bold;
+    color:#ff6915;
+    font-size:1.5em;
+}
+
+#commentaires p
+{
+    font-weight:bold;
+    color:#8fff00;
+    line-height:5px;
+}
+
+#commentaires .form
+{
+    width:40%;
+}
+
+#commentaires textarea
+{
+    height:70px;
+    width:80%;
+    padding:0 1.25em;
+    outline: none;
+    border:2px solid transparent;
+    border-radius:5px;
+}
+
+#commentaires button
+{
+    border:2px white inset; 
+    border-radius:20px;  
+    font-weight:bold;                 
+    cursor:pointer;
+    font-size:1em;
+    color:white;
+    background:#80acff ;
+}
+
+#commentaires .comtext
+{
+    padding-right:10px;
+}
+/*Jambo Mart*/
+#head2
+{
+    background-image:url("Image/Img73.jpg");
+    height :90vh;
+    width :100%;
+    background-size:cover;
+    background-position:top 25%;
+    padding:0 80px;
+    display :flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content: center;
+}
+
+#head2 h1
+{
+    color:#ceff55;
+    font-size:8em;
+    font-weight:bold;
+    text-decoration:underline;
+    text-shadow:5px 5px 10px black;
+}
+
+#head2 h3
+{
+    color:#2bffff;
+    font-size:5em;
+    font-weight:bold;
+    margin:10px;
+    text-shadow:5px 5px 10px black;
+}
+
+#head2 h2
+{
+    color:#2bff82;
+    font-size:3em;
+    font-weight:bold;
+    text-shadow:5px 5px 10px black;
+}
+
+#head2 button
+{
+    border:2px white inset; 
+    border-radius:20px;
+    box-shadow:5px 5px 10px black;   
+    font-weight:bold;                 
+    cursor:pointer;
+    font-size:3em;
+    color:white;
+    background:#4077ff ;
+}
+
+/*Article: Cuillère en bois*/
+#article-1
+{
+    display:flex;
+    margin-top:20px;
+}
+
+#article-1 .article-1-2
+{
+    width :30%;
+    margin-right:50px;
+ 
+}
+
+.article-1-3
+{
+    display :flex;
+    justify-content:space-between;
+}
+
+#article-1 .article-1-4
+{
+    cursor:pointer;
+    flex-basis:25%;
+    border:2px white inset; 
+    border-radius:10px;
+    box-shadow:2px 2px 5px black; 
+    cursor :pointer;
+    margin:10px;
+}
+
+.article-1-des h4
+{
+    padding :10px 0 5px 0;
+    font-size:1.5em;
+    text-shadow:2px 2px 3px black;
+    color :#90ff55;
+}
+
+.article-1-des h2
+{
+    font-size:1.5em;
+    text-shadow:2px 2px 3px black;
+    color :#ff5e00;
+}
+
+.article-1-des input
+{
+    width:25px; 
+    height: 25px;
+    padding-left:10px;
+    font-size:20px;
+    margin-right:10px;
+}
+
+.article-1-des button
+{
+    border:2px white inset; 
+    border-radius:20px;
+    box-shadow:5px 5px 10px black;   
+    font-weight:bold;                 
+    cursor:pointer;
+    font-size:1em;
+    color:white;
+    background:#4067ff ;
+    
+}
+
+/*Supermarché*/
+.Shop-Mall-1
+{
+    display :flex;
+    justify-content: center ;
+    padding-top:20px;
+    flex-wrap:wrap;
+    margin:auto;
+}
+
+.Mall
+{
+    border:2px white inset; 
+    border-radius:20px;
+    box-shadow:5px 5px 10px black;   
+    font-weight:bold;                 
+    cursor:pointer;
+    font-size:2em;
+    color:#ff7300;
+    background:url("Image/Img45.jpg") ;
+    text-shadow:5px 5px 10px black;
+    padding :5px 5px;
+    margin:10px 5px;
+}
+
+#Shop-mall h3
+{
+    text-align:center;
+    text-shadow:2px 2px 5px black;
+    font-size:2em;
+    color:#0096ff;
+}
+
+.Mall h2
+{
+    padding:5px 5px;
+}
+
+/*Magasin*/
+.Shop
+{
+    border:2px white inset; 
+    border-radius:20px;
+    box-shadow:5px 5px 10px black;   
+    font-weight:bold;                 
+    cursor:pointer;
+    font-size:1.5em;
+    color:#ff7300;
+    background-image: linear-gradient(to right,#a60022df, #0ea65bdf ) ;
+    text-shadow:5px 5px 10px black;
+    padding :5px 5px;
+    margin:10px 5px;
+}
+
+#Shop h3
+{
+    text-align:center;
+    text-shadow:2px 2px 5px black;
+    font-size:2em;
+    color:#0096ff;
+}
