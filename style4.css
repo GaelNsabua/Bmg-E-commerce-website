@@ -38,6 +38,7 @@ body
    font-size:16px;
    font-weight:600;
    transition :0.3s ease;
+   text-shadow:5px 5px 10px black;
 }
 
 #menu li a:hover,
@@ -135,7 +136,7 @@ body
     padding:10px 12px;
     border:2px white inset; 
     border-radius:20px;
-    box-shadow:5px 5px 10px black; 
+    box-shadow:5px 5px 30px rgba(0,0,0,0.6); 
     cursor :pointer;
     margin:15px 0;
     position : relative;
@@ -148,7 +149,7 @@ body
 
 #produit1 .produit img
 {
-    width :100%;
+    width :150px;
     border-radius:20px;
 }
 
@@ -301,6 +302,61 @@ body
     background:#4077ff ;
 }
 
+/*Kin Marché*/
+#head3
+{
+    background-image:url("Image/Img66.jpg");
+    height :90vh;
+    width :100%;
+    background-size:cover;
+    background-position:top 25%;
+    padding:0 80px;
+    display :flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content: center;
+}
+
+#head3 h1
+{
+    color:#ff352b;
+    font-size:8em;
+    font-weight:bold;
+    text-decoration:underline;
+    text-shadow:5px 5px 10px black;
+}
+
+#head3 h3
+{
+    color:#2bffff;
+    font-size:5em;
+    font-weight:bold;
+    margin:10px;
+    text-shadow:5px 5px 10px black;
+}
+
+#head3 h2
+{
+    color:#2bff82;
+    font-size:3em;
+    font-weight:bold;
+    text-shadow:5px 5px 10px black;
+}
+
+#head3 button
+{
+    border:2px white inset; 
+    border-radius:20px;
+    box-shadow:5px 5px 10px black;   
+    font-weight:bold;                 
+    cursor:pointer;
+    font-size:3em;
+    color:white;
+    background:#4077ff ;
+}
+
+
+
 /*Article: Cuillère en bois*/
 #article-1
 {
@@ -329,7 +385,7 @@ body
     border-radius:10px;
     box-shadow:2px 2px 5px black; 
     cursor :pointer;
-    margin:10px;
+    margin:5px;
 }
 
 .article-1-des h4
@@ -346,6 +402,12 @@ body
     text-shadow:2px 2px 3px black;
     color :#ff5e00;
 }
+
+.article-1-des span
+{
+    font-weight:bold;
+}
+
 
 .article-1-des input
 {
@@ -429,4 +491,155 @@ body
     text-shadow:2px 2px 5px black;
     font-size:2em;
     color:#0096ff;
+}
+
+/*Recherche*/
+#bod
+{
+   width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(to right,#ffc880, #80eaff ) ;
+   margin:auto;
+   display :flex;
+   flex-direction:column;
+   align-items: center ;
+   justify-content: center ;
+}
+
+.conteneur
+{
+    width: 395px;
+    height: 540px;
+    background: rgba(245, 234, 233, 0.6);
+    border-radius:15px;
+    box-shadow:5px 5px 30px rgba(0,0,0,0.6);
+    padding :20px;
+    overflow-y: scroll ;
+}
+
+.conteneur form
+{
+    width: 100%;
+    border:2px solid #8098ff;
+    border-radius:5px;
+    display :flex;
+    flex-direction:row;
+    align-items: center ;
+    z-index:999;
+    position :sticky;
+    top:0;
+    bottom:0;
+}
+
+.conteneur form input
+{
+    border:none;
+    outline:none;
+    box-shadow:none;
+    width :100%;
+    font-size:16px;
+    font-weight:600;
+    padding :8px 10px;
+}
+
+#list-produit
+{
+    padding :20px 0;
+}
+
+.produit2
+{
+    display :flex;
+    align-items:center;
+    cursor:pointer;
+    padding-right:10px;
+    
+}
+
+.produit2 img
+{
+    width: 90px;
+    height: 90px;
+    object-fit:cover;
+    border-radius:5px;
+}
+
+.produit2 .prod-det h3
+{
+    font-size:20px;
+}
+
+/*Panier*/
+#cart table
+{
+    width:100%;
+    border-collapse:collapse;
+    table-layout:fixed;
+    write-space:nowrap;
+    box-shadow:5px 5px 30px rgba(0,0,0,0.6);
+    margin:auto;
+}
+
+#cart table img
+{
+    width:70px;
+}
+
+#cart table td:nth-child(1)
+{
+    width:100px;
+    text-align: center;
+}
+
+#cart table td:nth-child(2)
+{
+    width:150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(3)
+{
+    width:250px;
+    text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6)
+{
+    width:150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(5) input
+{
+    width: 70px;
+    padding:10px 5px 10px 15px;
+}
+
+#cart table thead
+{
+    background: #ff7300;
+    border:1px solid #ff9315;
+    border-left:none;
+    border-right:none;
+}
+
+#cart table thead td
+{
+    font-weight:700;
+    text-transform: uppercase;
+    font-size:13px;
+    padding:15px 0;
+    text-align: center ;
+}
+
+#cart table tbody tr td
+{
+    padding-top:15px;
+}
+
+#cart table tbody td
+{
+    font-size:13px;
 }
