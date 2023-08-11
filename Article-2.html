@@ -3,37 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Samoussa</title>
-    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="../style4.css">
 </head>
 <body>
     <!--En-tête de la page  -->
-    <section id="header">
+    <section id="header" class="sect1">
         <img style="width:100px; height:100px; margin-left:2px;" src="Image/Img57.png" alt="LogoBmg">
         <img style="width:200px; height:100px; margin-left:0px;" src="Image/Img88.png" alt="LogoKin">
         <ul id="menu">
-            <li><a href="Accueil.html">Accueil</a></li>
-            <li><a href="Supermarché.html" class="active">Supermarchés</a></li>
-            <li><a href="Magasin.html">Magasins</a></li>
+            <li><a href="../Accueil.html">Accueil</a></li>
+            <li><a href="../Supermarché.html" class="active">Supermarchés</a></li>
+            <li><a href="../Magasin.html">Magasins</a></li>
             <li><a 
-href="Autre.html">Autre</a></li>
+href="../Autre.html">Autre</a></li>
             <li><a 
-href="Register.html">Se connecter</a></li>
+                href="../panier-1.html">Mon panier</a></li>
         </ul>
     </section>
-    <p style="font-size:1.5em; font-weight:bold; color:#ff1515;">Pour rechercher un article<a href="Recherche.html"> cliquez ici</a></p>
+    <p style="font-size:1.5em; font-weight:bold; color:#ff1515;">Pour rechercher un article<a href="../Recherche.html"> cliquez ici</a></p>
     <section id="article-1" class="sect1">
         <div class="article-1-2">
-            <img style="border:2px white inset; border-radius:10px;box-shadow:5px 5px 10px black; cursor :pointer;margin:15px; width:500px; height:500px;" src="Image/Img95.jpeg" alt="Cuillère_en_bois" id="MainImg"> 
+            <img style="border:2px white inset; border-radius:10px;box-shadow:5px 5px 10px black; cursor :pointer;margin:15px; width:300px;" src="Image/Img95.jpeg" alt="Cuillère_en_bois" id="MainImg"> 
         </div>
       
         <div class="article-1-des">
-            <h6>Supermarché/Kin marché</h6>
-            <h4>Samoussa à la viande</h4>
-            <h2>6000 Fc</h2>
-            <label id="quantité">Préciser la quantité</label><br>
-            <input for="number" name="quantité" id="quantité" value="1">
-            <button>Ajouter au panier</button>
-            <p style="font-size:1.3em; font-weight:bold;">Statut : <span style="color: red ;">Indisponible</span></p>
+            <h6>Supermarché/Kin marché/Nourriture</h6>
+            <h4 id="Nom-Art">Samoussa à la viande</h4>
+            <h2><span id="Prix-Art">6000</span>fc</h2>
+            <label for="quantité">Préciser la quantité</label><br>
+            <input type="number" name="quantité" id="quantité" value="1" min="1">
+            <button onclick="AddToCart()" id="bout">Ajouter au panier</button>
+            <p style="font-size:1.3em; font-weight:bold;">Statut : <span style="color: red ;" id="statut">Indisponible</span></p>
             <h4>Description</h4>
             <span>
                 3 samoussa à la viande hachée finement l'oignon émincé finement de chauffage électrique individuel et toi tu ne peux plus de vidéo de démonstration de force majeure et toi ça te va si je peux faire le tour de la semaine prochaine et je suis en ligne je vous remercie de votre réponse 
@@ -150,6 +150,13 @@ href="Register.html">Se connecter</a></li>
             <p>Nous serons ravis de vous lire</p>
         </div> 
     </section>
-    
+    <footer id="foot" class="sect1">
+        <h3>Adresse</h3>
+        <p>Pour localiser Kin marché<a href="
+  https://maps.app.goo.gl/EWZqLvpxmyQwy9ddA"> Cliquer ici</a></p>
+        <h3>FAQ</h3>
+        <h3>Qui sommes-nous ?!</h3>
+    </footer>
+    <script src="Art-script.js"></script>
 </body>
 </html>

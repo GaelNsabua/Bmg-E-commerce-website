@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Samoussa</title>
+    <link rel="stylesheet" href="../style4.css">
+</head>
+<body>
+    <!--En-tête de la page  -->
+    <section id="header" class="sect1">
+        <img style="width:100px; height:100px; margin-left:2px;" src="Image/Img57.png" alt="LogoBmg">
+        <img style="width:200px; height:100px; margin-left:0px;" src="Image/Img88.png" alt="LogoKin">
+        <ul id="menu">
+            <li><a href="../Accueil.html">Accueil</a></li>
+            <li><a href="../Supermarché.html" class="active">Supermarchés</a></li>
+            <li><a href="../Magasin.html">Magasins</a></li>
+            <li><a 
+href="../Autre.html">Autre</a></li>
+            <li><a 
+                href="../panier-1.html">Mon panier</a></li>
+        </ul>
+    </section>
+    <p style="font-size:1.5em; font-weight:bold; color:#ff1515;">Pour rechercher un article<a href="../Recherche.html"> cliquez ici</a></p>
+    <section id="article-1" class="sect1">
+        <div class="article-1-2">
+            <img style="border:2px white inset; border-radius:10px;box-shadow:5px 5px 10px black; cursor :pointer;margin:15px; width:300px;" src="Image/Img51.jpg" alt="Cuillère_en_bois" id="MainImg"> 
+        </div>
+      
+        <div class="article-1-des">
+            <h6>Supermarché/Kin marché/Nourriture</h6>
+            <h4 id="Nom-Art">Kit de soudure pou électronicien</h4>
+            <h2><span id="Prix-Art">65000</span>fc</h2>
+            <label for="quantité">Préciser la quantité</label><br>
+            <input type="number" name="quantité" id="quantité" value="1" min="1">
+            <button onclick="AddToCart()" id="bout">Ajouter au panier</button>
+            <p style="font-size:1.3em; font-weight:bold;">Statut : <span style="color: green ;" id="statut">Disponible</span></p>
+            <h4>Description</h4>
+            <span>
+              Kit de soudure pou electronicien de chauffage électrique individuel et toi tu ne peux plus de vidéo de démonstration de force majeure et toi ça te va si je peux faire le tour de la semaine prochaine et je suis en ligne je vous remercie de votre réponse 
+            </span>
+        </div>
+    </section>
+    
+    <section id="produit1" class="sect1">
+        <h2>Suggestions</h2>
+        <di class="prod-conteneur">
+            <div class="produit">
+               <img src="Image/Img52.jpg" alt="ordinateur"> 
+               <p style="border:2px #6aff8d solid; border-radius:30px;box-shadow:5px 5px 10px black; width:100%;"></p>
+               <div class="description">
+                   <span>HP</span>
+                   <h5>Ordinateur HP Elitebook</h5>
+                  <h4>300$</h4> 
+                  <a href="Article1.html"><img src="Image/Img58.jpg" alt="Panier" class="panier"></a>
+               </div>
+            </div>
+            <div class="produit">
+               <img src="Image/Img53.jpg" alt="ordinateur"> 
+               <p style="border:2px #6aff8d solid; border-radius:30px;box-shadow:5px 5px 10px black; width:100%;"></p>
+               <div class="description">
+                   <span>HP</span>
+                   <h5>Ordinateur HP Elitebook</h5>
+                  <h4>300$</h4> 
+                  <a href="Article1.html"><img src="Image/Img58.jpg" alt="Panier" class="panier"></a>
+               </div>
+            </div>
+            <div class="produit">
+               <img src="Image/Img55.jpg" alt="ordinateur"> 
+               <p style="border:2px #6aff8d solid; border-radius:30px;box-shadow:5px 5px 10px black; width:100%;"></p>
+               <div class="description">
+                   <span>HP</span>
+                   <h5>Ordinateur HP Elitebook</h5>
+                  <h4>300$</h4> 
+                  <a href="Article1.html"><img src="Image/Img58.jpg" alt="Panier" class="panier"></a>
+               </div>
+            </div>
+            <div class="produit">
+               <img src="Image/Img62.jpg" alt="ordinateur"> 
+               <p style="border:2px #6aff8d solid; border-radius:30px;box-shadow:5px 5px 10px black; width:100%;"></p>
+               <div class="description">
+                   <span>HP</span>
+                   <h5>Ordinateur HP Elitebook</h5>
+                  <h4>300$</h4> 
+                  <a href="Article1.html"><img src="Image/Img58.jpg" alt="Panier" class="panier"></a>
+               </div>
+            </div>
+            <div class="produit">
+               <img src="Image/Img63.jpg" alt="ordinateur"> 
+               <p style="border:2px #6aff8d solid; border-radius:30px;box-shadow:5px 5px 10px black; width:100%;"></p>
+               <div class="description">
+                   <span>HP</span>
+                   <h5>Ordinateur HP Elitebook</h5>
+                  <h4>300$</h4> 
+                  <a href="Article1.html"><img src="Image/Img58.jpg" alt="Panier" class="panier"></a>
+               </div>
+            </div>
+            <div class="produit">
+               <img src="Image/Img64.jpg" alt="ordinateur"> 
+               <p style="border:2px #6aff8d solid; border-radius:30px;box-shadow:5px 5px 10px black; width:100%;"></p>
+               <div class="description">
+                   <span>HP</span>
+                   <h5>Ordinateur HP Elitebook</h5>
+                  <h4>300$</h4> 
+                  <a href="Article1.html"><img src="Image/Img58.jpg" alt="Panier" class="panier"></a>
+               </div>
+            </div>
+            <div class="produit">
+               <img src="Image/Img66.jpg" alt="ordinateur"> 
+               <p style="border:2px #6aff8d solid; border-radius:30px;box-shadow:5px 5px 10px black; width:100%;"></p>
+               <div class="description">
+                   <span>HP</span>
+                   <h5>Ordinateur HP Elitebook</h5>
+                  <h4>300$</h4> 
+                  <a href="Article1.html"><img src="Image/Img58.jpg" alt="Panier" class="panier"></a>
+               </div>
+            </div>
+            <div class="produit">
+               <img src="Image/Img66.jpg" alt="ordinateur"> 
+               <p style="border:2px #6aff8d solid; border-radius:30px;box-shadow:5px 5px 10px black; width:100%;"></p>
+               <div class="description">
+                   <span>HP</span>
+                   <h5>Ordinateur HP Elitebook</h5>
+                  <h4>300$</h4> 
+                  <a href="Article1.html"><img src="Image/Img58.jpg" alt="Panier" class="panier"></a>
+               </div>
+            </div>
+            <div class="produit">
+               <img src="Image/Img66.jpg" alt="ordinateur"> 
+               <p style="border:2px #6aff8d solid; border-radius:30px;box-shadow:5px 5px 10px black; width:100%;"></p>
+               <div class="description">
+                   <span>HP</span>
+                   <h5>Ordinateur HP Elitebook</h5>
+                  <h4>300$</h4> 
+                  <a href="Article1.html"><img src="Image/Img58.jpg" alt="Panier" class="panier"></a>
+               </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="commentaires" class="sect1">
+        
+        <div class="form">
+            <label for="Comment" style="color:white;">Écrire votre commentaire ici:</label><br>
+        <textarea name="Comment" id="Comment"></textarea><br>
+            <button>Poster</button>
+        </div>
+        
+        <div class="comtext">
+            <h4>N'hésitez pas à laisser un commentaire</h4>
+            <p>Nous serons ravis de vous lire</p>
+        </div> 
+    </section>
+    <script src="Art-script.js"></script>
+</body>
+</html>

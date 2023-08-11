@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Cuillère en bois</title>
-    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="../style4.css">    
 </head>
 <body>
     <!--En-tête de la page  -->
-    <section id="header">
+    <section id="header" class="sect1">
         <img style="width:100px; height:100px; margin-left:2px;" src="Image/Img57.png" alt="LogoBmg">
         <img style="width:150px; height:100px; margin-left:0px; border:2px inset orange ; border-radius:50px;" src="Image/Img83.jpg" alt="LogoJambo">
         <ul id="menu">
-            <li><a href="Accueil.html">Accueil</a></li>
-            <li><a href="Supermarché.html" class="active">Supermarchés</a></li>
-            <li><a href="Magasin.html">Magasins</a></li>
+            <li><a href="../Accueil.html">Accueil</a></li>
+            <li><a href="../Supermarché.html" class="active">Supermarchés</a></li>
+            <li><a href="../Magasin.html">Magasins</a></li>
             <li><a 
-href="Autre.html">Autre</a></li>
+href="../Autre.html">Autre</a></li>
             <li><a 
-href="Register.html">Se connecter</a></li>
+                href="../panier-1.html">Mon panier</a></li>
         </ul>
     </section>
-    <p style="font-size:1.5em; font-weight:bold; color:#ff1515;">Pour rechercher un article<a href="Recherche.html"> cliquez ici</a></p>
+    <p style="font-size:1.5em; font-weight:bold; color:#ff1515;">Pour rechercher un article<a href="../Recherche.html"> cliquez ici</a></p>
     <section id="article-1" class="sect1">
         <div class="article-1-2">
             <img style="border:2px white inset; border-radius:10px;box-shadow:5px 5px 10px black; cursor :pointer;margin:15px; width:350px; " src="Image/Img76.jpg" alt="Cuillère_en_bois" id="MainImg">
@@ -41,13 +41,13 @@ href="Register.html">Se connecter</a></li>
         </div>
       
         <div class="article-1-des">
-            <h6>Supermarché/Jambo Mart</h6>
-            <h4>Cuillère en bois</h4>
-            <h2>12000 Fc</h2>
-            <label id="quantité">Préciser la quantité</label><br>
-            <input for="number" name="quantité" id="quantité" value="1">
-            <button>Ajouter au panier</button>
-            <p style="font-size:1.3em; font-weight:bold;">Statut : <span style="color:green;">Disponible</span></p>
+            <h6>Supermarché/Jambo Mart/Ustensiles de cuisine</h6>
+        <h4><span id="Nom-Art">Cuillère en bois</span></h4>              
+            <h2><span id="Prix-Art">12000</span>FC</h2> 
+            <label for="quantité">Préciser la quantité</label><br>
+            <input type="number" name="quantité" id="quantité" value="1" min="1">
+            <button onclick="AddToCart()" id="bout">Ajouter au panier</button>
+            <p style="font-size:1.3em; font-weight:bold;">Statut : <span style="color:green;" id="statut">Disponible</span></p>
             <h4>Description</h4>
             <span>
                 Cuillère en bois de chauffage électrique individuel et toi tu ne peux plus de vidéo de démonstration de force majeure et toi ça te va si je peux faire le tour de la semaine prochaine et je suis en ligne je vous remercie de votre réponse 
@@ -164,29 +164,13 @@ href="Register.html">Se connecter</a></li>
             <p>Nous serons ravis de vous lire</p>
         </div> 
     </section>
-    
-    <script>
-        var MainImg=document.getElementById("MainImg");
-        var smallImg=document.getElementsByClassName("smallImg");
-        
-        smallImg[0].onclick=function()
-        {
-            MainImg.src=smallImg[0].src;
-        }
-        smallImg[1].onclick=function()
-        {
-            MainImg.src=smallImg[1].src;
-        }
-        smallImg[2].onclick=function()
-        {
-            MainImg.src=smallImg[2].src;
-        }
-        smallImg[3].onclick=function()
-        {
-            MainImg.src=smallImg[3].src;
-        }
-        
-    </script>
-    
+    footer id="foot" class="sect1">
+        <h3>Adresse</h3>
+        <p>Pour localiser Jambo Mart<a href="
+https://maps.app.goo.gl/qzwi12f1tK2f6Ppq9"> Cliquer ici</a></p>
+        <h3>FAQ</h3>
+        <h3>Qui sommes-nous ?!</h3>
+    </footer>
+    <script src="Art-script.js"></script>
 </body>
 </html>
