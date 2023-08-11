@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Bmg Acceuil</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <!--En-tête de la page  -->
+    <section id="header" class="sect1">
+        <img style="width:100px; height:100px; margin-left:2px;" src="Image/Img57.png" alt="LogoBmg">
+        <ul id="menu">
+            <li><a href="Accueil.html">Accueil</a></li>
+            <li><a href="Supermarché.html">Supermarchés</a></li>
+            <li><a href="Magasin.html">Magasins</a></li>
+            <li><a 
+href="Autre.html">Autre</a></li>
+            <li><a 
+                href="panier-1.html" class="active">Mon panier</a></li>
+        </ul>
+    </section>
+    <p style="font-size:1.5em; font-weight:bold; color:#ff1515;">Pour rechercher un article<a href="Recherche.html"> cliquez ici</a></p>
+    
+    <section id="cart" class="sect1">
+        <div id="code" style="font-size:1.5em; font-weight:bold; color:#0c1318;"></div>
+        <table width="100%" >
+            <thead>
+                <tr>
+                    <td class="btn-rem">Annuler</td>
+                    <td>Produit</td>
+                    <td>Prix</td>
+                    <td>Quantité</td>
+                    <td>Total</td>
+                </tr>
+            </thead>
+            <tr>
+                <div class="tableau">
+                <table width="100%" id="TableArt">
+        </table>
+            </tr>
+            </div>
+        </table>
+            <table width="100%">
+                <tfoot>
+                <tr style="font-weight:bold; color:blue; font-size:1.3em; padding:15px; background-color:gray;">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Total :</td>
+                    <td><div id="totalité"></div></td>
+                </tr>
+            </tfoot>
+            </table>
+        <div id="sauv">
+            <button onclick="Panier()">Enregistrer</button>
+        </div>
+        <button onclick="AddCart()" >ajouter</button>
+    </section>
+    <script src="Script/cart-script.js"></script>
+</body>
+</html>  
